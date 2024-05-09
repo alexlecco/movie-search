@@ -1,11 +1,8 @@
 <script>
-  export let name;
+  import Counter from './Counter.svelte'
+  const initialCounter = 5
 </script>
 
-<style>
-  h1 {
-    color: #09f;
-  }
-</style>
-
-<h1>Hola {name}</h1>
+<Counter {initialCounter} />
+<Counter />
+<Counter initialCounter={2}/>
